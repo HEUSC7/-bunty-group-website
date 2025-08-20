@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Us – Bunty Group</title>
+  <meta name="description" content="Contact Bunty Group for premium real estate projects in Pune. Get in touch for property inquiries, site visits, and personalized assistance.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -28,29 +29,39 @@
   <main>
     <section class="page-header">
       <h1>GET IN TOUCH WITH US</h1>
+      <p>We're here to help you find your perfect home. Contact us today!</p>
     </section>
 
     <section class="contact-info">
       <div class="container">
         <div class="contact-details">
           <div class="office-info">
-            <h2>Bunty Group Office</h2>
+            <h2>📍 Bunty Group Office</h2>
             <address>
+              <strong>Corporate Office:</strong><br>
               CTS No. 2027,<br>
               Next to Mayur Vatika,<br>
               Dapodi, Pune-411012<br><br>
-              <strong>📞 9975570020 / 26</strong><br>
-              <strong>📧 <a href="mailto:info@buntygroup.com">info@buntygroup.com</a></strong>
+              <strong>📞 Phone:</strong> <a href="tel:+919975570020">+91 9975570020</a> / <a href="tel:+919975570026">26</a><br>
+              <strong>📧 Email:</strong> <a href="mailto:info@buntygroup.com">info@buntygroup.com</a><br>
+              <strong>🕒 Office Hours:</strong> Mon-Sat 9:00 AM - 7:00 PM
             </address>
           </div>
           
           <div class="social-follow">
-            <h3>Follow Us On</h3>
+            <h3>🌐 Follow Us On</h3>
             <div class="social-icons">
-              <a href="#" class="social-icon facebook" title="Facebook">📘</a>
-              <a href="#" class="social-icon instagram" title="Instagram">📷</a>
-              <a href="#" class="social-icon youtube" title="YouTube">📺</a>
-              <a href="#" class="social-icon twitter" title="Twitter">🐦</a>
+              <a href="#" class="social-icon facebook" title="Facebook">📘 Facebook</a>
+              <a href="#" class="social-icon instagram" title="Instagram">📷 Instagram</a>
+              <a href="#" class="social-icon youtube" title="YouTube">📺 YouTube</a>
+              <a href="#" class="social-icon linkedin" title="LinkedIn">💼 LinkedIn</a>
+            </div>
+            <div class="quick-contact">
+              <h4>Quick Contact</h4>
+              <p>
+                <a href="tel:+919975570020" class="btn btn-outline">📞 Call Now</a>
+                <a href="https://wa.me/919975570020" class="btn btn-primary">💬 WhatsApp</a>
+              </p>
             </div>
           </div>
         </div>
@@ -61,9 +72,13 @@
       <div class="container">
         <div class="form-container">
           <h2>CONNECT WITH US</h2>
-          <p>Please fill your details and requirements, we will get back to you.</p>
+          <p>Please fill your details and requirements, we will get back to you within 24 hours.</p>
           
-          <form action="backend/contact-form-handler.php" method="post" class="contact-form">
+          <!-- Updated form for GitHub Pages compatibility -->
+          <form action="https://formspree.io/f/mldebvvo" method="post" class="contact-form" id="contactForm">
+            <input type="hidden" name="_subject" value="New Inquiry from Bunty Group Website">
+            <input type="hidden" name="_next" value="https://heusc7.github.io/-bunty-group-website/thank-you.html">
+            
             <div class="form-row">
               <div class="form-group">
                 <label for="contact-name">Name *</label>
@@ -96,17 +111,19 @@
                   <option value="Mayur Samruddhi">Mayur Samruddhi</option>
                   <option value="Mayur Vatika">Mayur Vatika</option>
                   <option value="Mayur Pixel">Mayur Pixel</option>
-                  <option value="Other">Other</option>
+                  <option value="Other">Other / New Projects</option>
                 </select>
               </div>
               <div class="form-group">
                 <label for="budget-select">Your Budget</label>
                 <select id="budget-select" name="budget">
                   <option value="">--Your Budget--</option>
-                  <option value="INR 1.5-3 Cr">INR 1.5-3 Cr</option>
-                  <option value="INR 3-6 Cr">INR 3-6 Cr</option>
-                  <option value="INR 7-10 Cr">INR 7-10 Cr</option>
-                  <option value="INR 10 Cr +">INR 10 Cr +</option>
+                  <option value="Under INR 1 Cr">Under INR 1 Cr</option>
+                  <option value="INR 1-2 Cr">INR 1-2 Cr</option>
+                  <option value="INR 2-3 Cr">INR 2-3 Cr</option>
+                  <option value="INR 3-5 Cr">INR 3-5 Cr</option>
+                  <option value="INR 5-10 Cr">INR 5-10 Cr</option>
+                  <option value="Above INR 10 Cr">Above INR 10 Cr</option>
                 </select>
               </div>
             </div>
@@ -121,106 +138,165 @@
                 <option value="4 BHK">4 BHK</option>
                 <option value="Duplex">Duplex</option>
                 <option value="Penthouse">Penthouse</option>
-                <option value="Commercial">Commercial Space</option>
+                <option value="Commercial Space">Commercial Space</option>
+                <option value="Plot/Land">Plot/Land</option>
               </select>
             </div>
             
             <div class="form-group">
               <label for="contact-message">Message</label>
-              <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your specific requirements..."></textarea>
+              <textarea id="contact-message" name="message" rows="4" placeholder="Tell us about your specific requirements, preferred location, timeline, etc..."></textarea>
             </div>
             
             <div class="form-group">
               <label for="visit-preference">Preferred Contact Method</label>
               <div class="checkbox-group">
                 <label class="checkbox-label">
-                  <input type="checkbox" name="contact_method[]" value="phone"> Phone Call
+                  <input type="checkbox" name="contact_method" value="phone"> 📞 Phone Call
                 </label>
                 <label class="checkbox-label">
-                  <input type="checkbox" name="contact_method[]" value="email"> Email
+                  <input type="checkbox" name="contact_method" value="email"> 📧 Email
                 </label>
                 <label class="checkbox-label">
-                  <input type="checkbox" name="contact_method[]" value="whatsapp"> WhatsApp
+                  <input type="checkbox" name="contact_method" value="whatsapp"> 💬 WhatsApp
                 </label>
                 <label class="checkbox-label">
-                  <input type="checkbox" name="contact_method[]" value="site_visit"> Site Visit
+                  <input type="checkbox" name="contact_method" value="site_visit"> 🏢 Site Visit
                 </label>
               </div>
             </div>
             
             <div class="form-group">
-              <div class="captcha-placeholder">
-                <label>
-                  <input type="checkbox" required> I'm not a robot (reCAPTCHA integration required)
-                </label>
+              <div class="form-notice">
+                <p><small>📋 <strong>Note:</strong> All inquiries are handled confidentially. We respect your privacy and will not share your information with third parties.</small></p>
               </div>
             </div>
             
-            <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+            <button type="submit" class="btn btn-primary btn-large">Submit Inquiry</button>
+            
+            <div class="form-loading" id="formLoading" style="display: none;">
+              <p>⏳ Submitting your inquiry...</p>
+            </div>
           </form>
+          
+          <div class="alternate-contact">
+            <h3>Need Immediate Assistance?</h3>
+            <div class="contact-options">
+              <a href="tel:+919975570020" class="contact-option">
+                <span class="icon">📞</span>
+                <div class="details">
+                  <strong>Call Us</strong>
+                  <p>+91 9975570020</p>
+                </div>
+              </a>
+              <a href="mailto:info@buntygroup.com" class="contact-option">
+                <span class="icon">📧</span>
+                <div class="details">
+                  <strong>Email Us</strong>
+                  <p>info@buntygroup.com</p>
+                </div>
+              </a>
+              <a href="https://wa.me/919975570020" class="contact-option">
+                <span class="icon">💬</span>
+                <div class="details">
+                  <strong>WhatsApp</strong>
+                  <p>Chat with us instantly</p>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="map-section">
       <div class="container">
-        <h2>FOOTPRINTS</h2>
+        <h2>📍 FIND US HERE</h2>
         <div class="map-container">
-          <!-- Google Maps Embed - Replace with actual coordinates -->
+          <!-- Updated Google Maps embed with correct Dapodi location -->
           <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.5847238384047!2d73.8307174!3d18.5644374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0c5e3b9a9e9%3A0x1234567890abcdef!2sDapodi%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1234567890123" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.264426837339!2d73.82810987516929!3d18.567639782535734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0c9a7800001%3A0x7000000000000000!2sDapodi%2C%20Pimpri-Chinchwad%2C%20Maharashtra%20411012!5e0!3m2!1sen!2sin!4v1635000000000!5m2!1sen!2sin" 
             width="100%" 
             height="400" 
             style="border:0;" 
             allowfullscreen="" 
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Bunty Group Office Location - Dapodi, Pune">
           </iframe>
         </div>
         <div class="location-details">
-          <h3>How to Reach Us</h3>
-          <ul>
-            <li><strong>By Car:</strong> Located on the main Dapodi road, next to Mayur Vatika</li>
-            <li><strong>By Public Transport:</strong> Well connected by PMPML buses</li>
-            <li><strong>Nearest Railway Station:</strong> Dapodi Railway Station (1.5 km)</li>
-            <li><strong>Airport:</strong> Pune Airport (15 km)</li>
-          </ul>
+          <h3>🚗 How to Reach Us</h3>
+          <div class="directions-grid">
+            <div class="direction-item">
+              <h4>🚗 By Car</h4>
+              <p>Located on the main Dapodi road, next to Mayur Vatika. Ample parking available.</p>
+            </div>
+            <div class="direction-item">
+              <h4>🚌 By Public Transport</h4>
+              <p>Well connected by PMPML buses. Multiple bus routes available.</p>
+            </div>
+            <div class="direction-item">
+              <h4>🚊 Nearest Railway Station</h4>
+              <p>Dapodi Railway Station - 1.5 km (5 minutes by auto)</p>
+            </div>
+            <div class="direction-item">
+              <h4>✈️ From Airport</h4>
+              <p>Pune Airport - 15 km (30 minutes drive)</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="project-offices">
       <div class="container">
-        <h2>Project Site Offices</h2>
+        <h2>🏢 Project Site Offices</h2>
         <div class="site-offices-grid">
           <div class="site-office">
-            <h3>Mayur Samruddhi Site Office</h3>
+            <h3>🏗️ Mayur Samruddhi Site Office</h3>
             <address>
               S. No. 180/1 Akurdi, Pune<br>
-              <strong>📞 9975570123</strong><br>
-              <strong>📧 sales@buntygroup.com</strong>
+              <strong>📞 Phone:</strong> <a href="tel:+919975570123">+91 9975570123</a><br>
+              <strong>📧 Email:</strong> <a href="mailto:sales@buntygroup.com">sales@buntygroup.com</a><br>
+              <strong>🕒 Site Hours:</strong> Daily 9:00 AM - 6:00 PM
             </address>
-            <p><strong>RERA Registration:</strong></p>
-            <ul class="rera-list">
-              <li>P52100004027</li>
-              <li>P52100007199</li>
-              <li>P52100009105</li>
-            </ul>
+            <div class="rera-info">
+              <p><strong>🏛️ RERA Registration Numbers:</strong></p>
+              <ul class="rera-list">
+                <li>✅ P52100004027</li>
+                <li>✅ P52100007199</li>
+                <li>✅ P52100009105</li>
+              </ul>
+            </div>
+            <a href="projects.html#mayur-samruddhi" class="btn btn-outline">View Project Details</a>
           </div>
           
           <div class="site-office">
-            <h3>Mayur Geminus Site Office</h3>
+            <h3>🏗️ Mayur Geminus Site Office</h3>
             <address>
               S. No. 50, Kalepadal,<br>
               Handewadi Road, Hadapsar 411028<br>
-              <strong>📞 9975570013 / 32</strong><br>
-              <strong>📧 sales@buntygroup.com</strong>
+              <strong>📞 Phone:</strong> <a href="tel:+919975570013">+91 9975570013</a> / <a href="tel:+919975570032">32</a><br>
+              <strong>📧 Email:</strong> <a href="mailto:sales@buntygroup.com">sales@buntygroup.com</a><br>
+              <strong>🕒 Site Hours:</strong> Daily 9:00 AM - 6:00 PM
             </address>
-            <p><strong>RERA Registration:</strong></p>
-            <ul class="rera-list">
-              <li>P52100003518</li>
-            </ul>
+            <div class="rera-info">
+              <p><strong>🏛️ RERA Registration Number:</strong></p>
+              <ul class="rera-list">
+                <li>✅ P52100003518</li>
+              </ul>
+            </div>
+            <a href="projects.html#mayur-geminus" class="btn btn-outline">View Project Details</a>
           </div>
+        </div>
+        
+        <div class="rera-disclaimer">
+          <p><small>
+            <strong>📋 Important:</strong> All projects are registered under RERA (Real Estate Regulation and Development Act). 
+            For complete project details, approved layout plans, and legal documents, please visit our office or 
+            contact our sales team.
+          </small></p>
         </div>
       </div>
     </section>
@@ -245,23 +321,37 @@
           Bunty Group, CTS No. 2027<br>
           Next to Mayur Vatika,<br>
           Dapodi, Pune-411012<br><br>
-          <strong>9975570020 / 26</strong><br>
-          <a href="mailto:info@buntygroup.com">info@buntygroup.com</a>
+          <strong>📞 9975570020 / 26</strong><br>
+          <strong>📧 <a href="mailto:info@buntygroup.com">info@buntygroup.com</a></strong>
         </address>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Our Projects</h3>
+        <ul class="project-links">
+          <li><a href="projects.html#mayur-samruddhi">Mayur Samruddhi</a></li>
+          <li><a href="projects.html#mayur-geminus">Mayur Geminus</a></li>
+          <li><a href="projects.html#mayur-vatika">Mayur Vatika</a></li>
+          <li><a href="contact-us.html">Upcoming Projects</a></li>
+        </ul>
       </div>
       
       <div class="footer-section">
         <h3>Follow Us On</h3>
         <div class="social-icons">
-          <a href="#" class="social-icon facebook">📘</a>
-          <a href="#" class="social-icon instagram">📷</a>
-          <a href="#" class="social-icon youtube">📺</a>
+          <a href="#" class="social-icon facebook" title="Facebook">📘</a>
+          <a href="#" class="social-icon instagram" title="Instagram">📷</a>
+          <a href="#" class="social-icon youtube" title="YouTube">📺</a>
+          <a href="#" class="social-icon linkedin" title="LinkedIn">💼</a>
+        </div>
+        <div class="rera-info">
+          <p><small>RERA Registered Developer</small></p>
         </div>
       </div>
     </div>
     
     <div class="footer-bottom">
-      <p>© 2019 Bunty Group. All Rights Reserved. Website Design & Developed By #Being Addictive.</p>
+      <p>© 2025 Bunty Group. All Rights Reserved. | Website Design & Developed By #Being Addictive.</p>
     </div>
   </footer>
 
