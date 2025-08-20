@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects – Bunty Group</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="nav-brand">
+        <h1>BUNTY GROUP</h1>
+      </div>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        ☰
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>PROJECTS</h1>
+    </section>
+
+    <section class="projects-tabs">
+      <div class="container">
+        <div class="tab-buttons">
+          <button data-tab="ongoing" class="tab-btn active">Ongoing Projects</button>
+          <button data-tab="upcoming" class="tab-btn">Upcoming Projects</button>
+          <button data-tab="completed" class="tab-btn">Completed Projects</button>
+        </div>
+
+        <div id="ongoing" class="projects-list active">
+          <div class="projects-grid">
+            <!-- Mayur Samruddhi -->
+            <article id="mayur-samruddhi" class="project-card detailed">
+              <div class="project-image">
+                <img src="assets/images/mayur-samruddhi-main.jpg" alt="Mayur Samruddhi">
+              </div>
+              <div class="project-content">
+                <h3>Mayur Samruddhi</h3>
+                <p class="project-location">S. No. 180/1 Akurdi, Pune</p>
+                <p>The project is a sumptuous Vastu where grandeur of everything in life is a perennial accompaniment. As the name implies, Mayur Samruddhi, our ongoing projects in Akurdi, will pile abundance of Prosperity, Health, Expertise and Power.</p>
+                
+                <div class="project-details">
+                  <h4>Key Features:</h4>
+                  <ul>
+                    <li>2, 3 & 4 BHK lavish apartments</li>
+                    <li>Commercial spaces available</li>
+                    <li>Wi-Fi Club House</li>
+                    <li>Jogging Track & Pebble Path</li>
+                    <li>Solar Water Heaters</li>
+                  </ul>
+                </div>
+                
+                <div class="project-actions">
+                  <a href="assets/pdf/mayur-samruddhi-brochure.pdf" class="btn btn-download" download>DOWNLOAD E BROCHURE</a>
+                  <a href="#contact-form" class="btn btn-primary">GET IN TOUCH</a>
+                </div>
+                
+                <div class="rera-info">
+                  <p><strong>RERA Reg. No.:</strong> P52100004027, P52100007199, P52100009105</p>
+                </div>
+              </div>
+            </article>
+
+            <!-- Mayur Geminus -->
+            <article id="mayur-geminus" class="project-card detailed">
+              <div class="project-image">
+                <img src="assets/images/mayur-geminus-main.jpg" alt="Mayur Geminus">
+              </div>
+              <div class="project-content">
+                <h3>Mayur Geminus</h3>
+                <p class="project-location">S. No. 50, Kalepadal, Handewadi Road, Hadapsar 411028</p>
+                <p>Inspired by the qualities of the sun-sign Gemini, "Mayur Geminus" inherits state of mind luxurious well being packaged in two. Nestled in the optimum location of Hadapsar, Pune.</p>
+                
+                <div class="project-details">
+                  <h4>Amenities:</h4>
+                  <ul>
+                    <li>Wi-Fi Club house</li>
+                    <li>Floral Garden & Landscape Garden</li>
+                    <li>Peaceful Senior Citizen's area</li>
+                    <li>Party Lawn</li>
+                    <li>School bus shed for children</li>
+                  </ul>
+                </div>
+                
+                <div class="project-actions">
+                  <a href="assets/pdf/mayur-geminus-brochure.pdf" class="btn btn-download" download>DOWNLOAD E BROCHURE</a>
+                  <a href="#contact-form" class="btn btn-primary">GET IN TOUCH</a>
+                </div>
+                
+                <div class="rera-info">
+                  <p><strong>RERA Reg. No.:</strong> P52100003518</p>
+                </div>
+                
+                <div class="project-contact">
+                  <p><strong>Site Contact:</strong> 9975570013 / 32</p>
+                  <p><strong>Email:</strong> sales@buntygroup.com</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div id="upcoming" class="projects-list">
+          <div class="no-projects">
+            <h3>Upcoming Projects</h3>
+            <p>We are constantly working on new exciting projects. Stay tuned for updates on our upcoming developments.</p>
+            <a href="contact-us.html" class="btn btn-primary">Contact Us for Updates</a>
+          </div>
+        </div>
+
+        <div id="completed" class="projects-list">
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img src="assets/images/mayur-vatika.jpg" alt="Mayur Vatika">
+              </div>
+              <div class="project-content">
+                <h3>Mayur Vatika</h3>
+                <p class="project-location">Dapodi, Pune</p>
+                <p>Our landmark project that set the foundation for Bunty Group's reputation in quality construction.</p>
+                <span class="project-status completed">Completed</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="project-inquiry">
+      <div class="container">
+        <h2>GET IN TOUCH</h2>
+        <form action="backend/contact-form-handler.php" method="post" class="inquiry-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone No.</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="project">Project Name</label>
+              <select id="project" name="project">
+                <option value="">--Select Project--</option>
+                <option value="Mayur Kilbil phase II">Mayur Kilbil phase II</option>
+                <option value="Mayur Geminus">Mayur Geminus</option>
+                <option value="Mayur Samruddhi">Mayur Samruddhi</option>
+                <option value="Mayur Vatika">Mayur Vatika</option>
+                <option value="Mayur Pixel">Mayur Pixel</option>
+              </select>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your requirements..."></textarea>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="quick-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+          <li><a href="career.html">Career</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Office Address</h3>
+        <address>
+          Bunty Group, CTS No. 2027<br>
+          Next to Mayur Vatika,<br>
+          Dapodi, Pune-411012<br><br>
+          <strong>9975570020 / 26</strong><br>
+          <a href="mailto:info@buntygroup.com">info@buntygroup.com</a>
+        </address>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Follow Us On</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon facebook">📘</a>
+          <a href="#" class="social-icon instagram">📷</a>
+          <a href="#" class="social-icon youtube">📺</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2019 Bunty Group. All Rights Reserved. Website Design & Developed By #Being Addictive.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
